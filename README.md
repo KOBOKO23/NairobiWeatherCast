@@ -1,11 +1,11 @@
 ```markdown
-# 🌦 NairobiWeatherCast
+🌦 NairobiWeatherCast
 
-**NairobiWeatherCast** is a simple weather forecasting app built for educational purposes, focusing on **rainfall prediction in Nairobi**. This MVP was created as part of an **Operational Training in Meteorology** course to show that it’s possible to build a custom weather forecasting model using open-source tools.
+`NairobiWeatherCast` is a simple weather forecasting app built for educational purposes, focusing on `rainfall prediction in Nairobi`. This MVP was created as part of an `Operational Training Course` in Meteorolog to show that it’s possible to build a custom weather forecasting model using open-source tools.
 
 ---
 
-## 🎯 Project Goals
+ 🎯 Project Goals
 
 - Predict rainfall in Nairobi using historical weather data.
 - Build and train a machine learning model from scratch.
@@ -14,17 +14,17 @@
 
 ---
 
-## 🛠 Technologies Used
+ 🛠 Technologies Used
 
-- **Python** – Programming language
-- **Flask** – Web framework
-- **pandas** – Data processing
-- **matplotlib** – Data visualization
-- **scikit-learn** *(or TensorFlow)* – Machine learning modeling
+`Python` – Programming language
+`Flask` – Web framework
+ `pandas` – Data processing
+ `matplotlib` – Data visualization
+ `scikit-learn` `(or TensorFlow)` – Machine learning modeling
 
 ---
 
-## 📁 Project Structure
+ 📁 Project Structure
 
 ```
 nairobiweathercast/
@@ -45,38 +45,38 @@ nairobiweathercast/
 
 ---
 
-## 🚀 Getting Started
+ 🚀 Getting Started
 
-1. **Clone the repository**
+1. `Clone the repository`
    ```bash
    git clone https://github.com/your-username/nairobiweathercast.git
    cd nairobiweathercast
    ```
 
-2. **Create and activate a virtual environment**
+2. `Create and activate a virtual environment`
    ```bash
    python -m venv venv
    venv\Scripts\activate   # Windows
    ```
 
-3. **Install dependencies**
+3. `Install dependencies`
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the Flask app**
+4. `Run the Flask app`
    ```bash
    python app.py
    ```
 
-5. **Open in your browser**
+5. `Open in your browser`
    ```
    http://127.0.0.1:5000/
    ```
 
 ---
 
-## 📊 Features
+📊 Features
 
 - Upload and process historical weather data
 - Train a basic ML model to forecast rainfall
@@ -85,7 +85,7 @@ nairobiweathercast/
 
 ---
 
-## 🌱 Future Ideas
+🌱 Future Ideas
 
 - Predict temperature alongside rainfall
 - Add real-time weather data via external APIs
@@ -94,9 +94,9 @@ nairobiweathercast/
 
 ---
 
-## 👨‍💻 Author
+👨‍💻 Author
 
-**Philip**  
+`Philip Koboko`  
 Meteorology Student & Developer  
-*Built for academic and training purposes.*
+`Built for academic and training purposes.`
 ```
