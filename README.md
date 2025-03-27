@@ -1,18 +1,6 @@
-Got you, Philip! 💯 If you're seeing the asterisks (`*`) appear **as actual asterisks** on GitHub instead of formatting the text, it’s likely because:
-
-- You’re wrapping the whole block in triple backticks \(```markdown`\), which **tells GitHub to treat the whole thing as code**, not Markdown text.
-
-### ✅ Solution:
-
-To make your **README display proper formatting**, **don’t wrap the entire thing in triple backticks**. Just use normal Markdown syntax **without the outer ```markdown code block**.
-
-Here’s your updated README version — **clean and GitHub-ready**, with proper formatting for bold, code, and headings:
-
----
-
 # 🌦 NairobiWeatherCast
 
-**NairobiWeatherCast** is a simple weather forecasting app built for educational purposes, focusing on **rainfall prediction in Nairobi**. This MVP was created as part of an *Operational Training Course in Meteorology* to show that it’s possible to build a custom weather forecasting model using open-source tools.
+**NairobiWeatherCast** is a simple weather forecasting app built for educational purposes, focusing on **rainfall prediction in Nairobi**. This MVP was created as part of an *Operational Training Course in Meteorology* to show the possibilities of having our own custom weather forecasting model using open-source tools.
 
 ---
 
