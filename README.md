@@ -1,25 +1,28 @@
 # 🌦 NairobiWeatherCast
 
-**NairobiWeatherCast** is a simple weather forecasting app built for educational purposes, focusing on **rainfall prediction in Nairobi**. This MVP was created as part of an *Operational Training Course in Meteorology* to show the possibilities of having our own custom weather forecasting model using open-source tools.
+NairobiWeatherCast is a meteorological visualization and forecasting tool designed to help forecasters analyze weather parameters at multiple pressure levels over Nairobi. It enables real-time exploration of key atmospheric variables such as MSLP, winds, temperature, and humidity across pressure levels (surface, 850mb, 700mb, etc.) to support daily forecast preparation.
 
 ---
 
 ## 🎯 Project Goals
 
-- Predict rainfall in Nairobi using historical weather data.  
-- Build and train a machine learning model from scratch.  
-- Visualize forecasts in a clean, user-friendly web interface.  
-- Provide a solid foundation for future expansion (temperature, APIs, etc.).
+- Enable visual inspection of atmospheric parameters for operational forecasting  
+- Show how pressure, wind, RH, and temperature change at different levels  
+- Provide real-time and historical plots of parameters every 15 minutes  
+- Build a foundation for a custom forecasting model using open-source tools  
+- Deliver a forecaster-friendly interface that mimics standard forecasting workflows  
 
 ---
 
 ## 🛠 Technologies Used
 
-- **Python** – Programming language  
-- **Flask** – Web framework  
-- **pandas** – Data processing  
-- **matplotlib** – Data visualization  
-- **scikit-learn** *(or TensorFlow)* – Machine learning modeling  
+- Python – Core programming language  
+- Flask – Backend web framework  
+- MySQL – Data storage for parameter metadata and forecast info  
+- pandas – Data handling and transformation  
+- Plotly / Leaflet.js – Interactive visualizations and mapping  
+- xarray, netCDF4, cdsapi – For weather data extraction and manipulation  
+- CRON / Scheduler – For fetching data every 15 minutes  
 
 ---
 
@@ -33,11 +36,14 @@ nairobiweathercast/
 ├── templates/
 │   └── index.html
 ├── data/
-│   └── historical_weather.csv
-├── app.py
-├── model.py
-├── utils.py
-├── console.py
+│   ├── raw/
+│   ├── processed/           
+│   └── sample_forecast.csv
+├── app.py                   
+├── fetch_data.py          
+├── model.py                 
+├── utils.py                
+├── console.py             
 ├── requirements.txt
 └── README.md
 ```
@@ -46,57 +52,70 @@ nairobiweathercast/
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**
-   ```bash
+1. Clone the repository:
+   ```
    git clone https://github.com/your-username/nairobiweathercast.git
    cd nairobiweathercast
    ```
 
-2. **Create and activate a virtual environment**
-   ```bash
+2. Create and activate a virtual environment:
+   ```
    python -m venv venv
-   venv\Scripts\activate   # On Windows
+   source venv/bin/activate       # On Unix/macOS
+   venv\Scripts\activate          # On Windows
    ```
 
-3. **Install dependencies**
-   ```bash
+3. Install dependencies:
+   ```
    pip install -r requirements.txt
    ```
 
-4. **Run the Flask app**
-   ```bash
+4. Run the Flask app:
+   ```
    python app.py
    ```
 
-5. **Open in your browser**
+5. Access the dashboard:
    ```
    http://127.0.0.1:5000/
    ```
 
 ---
 
-## 📊 Features
+## 📊 Key Features
 
-- Upload and process historical weather data  
-- Train a basic ML model to forecast rainfall  
-- Display forecast results in graph form  
-- Simple and intuitive interface  
+- Visual exploration of MSLP, temperature, wind, RH at pressure levels  
+- Interactive navigation through time (past and forecast hours)  
+- Real-time data fetching (every 15 minutes)  
+- Forecast support for daily decisions  
+- Expandable for future ML-based model integration  
 
 ---
 
-## 🌱 Future Ideas
+## 📌 Forecast Workflow
 
-- Predict temperature alongside rainfall  
-- Add real-time weather data via external APIs  
-- Improve accuracy with deep learning models  
-- Mobile and responsive UI design  
+1. Select a weather parameter (e.g., 850mb Winds, MSLP)  
+2. Choose pressure level  
+3. View visual plot of behavior across time  
+4. Combine info from different levels to make a conclusive forecast  
+
+---
+
+## 🌱 Future Plans
+
+- Add rainfall prediction using ML/AI model  
+- Incorporate real-time satellite and radar overlays  
+- Enable user accounts for forecast generation and history  
+- Mobile-friendly and multi-location support  
+- Build REST API for programmatic access  
 
 ---
 
 ## 👨‍💻 Author
 
-**Philip Koboko**  
+Philip Koboko  
 Meteorology Student & Developer  
-Built for academic and training purposes.
+Created as part of an Operational Meteorology Training Course (2025)
 
 ---
+
